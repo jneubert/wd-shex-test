@@ -4,7 +4,7 @@
         "schemaURL": "https://raw.githubusercontent.com/jneubert/wd-shex-test/master/wikidata-organization.shex",
         "dataLabel": "Get all items with PM20 ids starting with 'co/'" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> select ?item where {  ?item wdt:P4293 ?pm20Id . filter(regex(?pm20Id, '^co/'))} limit 20'''@START",
+        "queryMap": "SPARQL '''select ?item where { ?item wdt:P4293 ?pm20Id . filter(regex(?pm20Id, '^co/'))} limit 20'''@START",
         "status": "conformant"
     }
 ]
