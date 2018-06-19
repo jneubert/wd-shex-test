@@ -1,0 +1,28 @@
+# Shape expression for checking an item is an instance
+# of organization class (or of some subclass)
+
+#BASE <http://base.example/#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prv: <http://www.wikidata.org/prop/reference/value/>
+PREFIX pr:  <http://www.wikidata.org/prop/reference/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+start = @<wikidata-organization>
+
+<wikidata-organization> {
+
+  #statements
+  p:P31 @<P31_instance_of_organization>* ;
+}
+
+<P31_instance_of_organization> {
+  ps:P31 [wd:Q43229] ;
+}
