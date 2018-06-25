@@ -1,6 +1,6 @@
 [
     {
-        "schemaLabel": "Check if Wikidata class exists",
+        "schemaLabel": "Wikidata class exists",
         "schemaURL": "https://raw.githubusercontent.com/jneubert/wd-shex-test/master/wikidata-class.shex",
         "dataLabel": "Get 20 items with PM20 ids starting with 'co/'" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
