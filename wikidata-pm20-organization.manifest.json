@@ -1,5 +1,13 @@
 [
     {
+        "schemaLabel": "Check if Wikidata class exists",
+        "schemaURL": "https://raw.githubusercontent.com/jneubert/wd-shex-test/master/wikidata-class.shex",
+        "dataLabel": "Get 20 items with PM20 ids starting with 'co/'" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n  ?item wdt:P4293 ?pm20Id .\r\n  filter(regex(?pm20Id, '^co\/'))\r\n}\r\nlimit 20'''@START",
+        "status": "conformant"
+    },
+    {
         "schemaLabel": "Wikidata organization class derived from PM20 ID",
         "schemaURL": "https://raw.githubusercontent.com/jneubert/wd-shex-test/master/wikidata-organization.shex",
         "dataLabel": "Get 20 items with PM20 ids starting with 'co/'" ,
